@@ -56,7 +56,7 @@ public class MDNSLookup {
 		try (var r = new BufferedReader(new InputStreamReader(is))) {
 			String line;
 			while ((line = r.readLine()) != null) {
-				return line;
+				return line; // only want the first line of the result
 			}
 			return "";
 		}
